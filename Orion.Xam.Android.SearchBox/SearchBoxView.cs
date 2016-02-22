@@ -207,6 +207,7 @@ namespace Orion.Xam.Android.SearchBox {
 			_search.Visibility = ViewStates.Visible;
 			_search.RequestFocus();
 			_listResults.Visibility = ViewStates.Visible;
+			_clear.Visibility = string.IsNullOrEmpty(_search.Text) ? ViewStates.Invisible : ViewStates.Visible;
 			_resultAdapter = new SearchAdapter(_context, _filteredSources, _search);
 			_listResults.Adapter = _resultAdapter;
 
@@ -222,6 +223,7 @@ namespace Orion.Xam.Android.SearchBox {
 			_placeholder.Visibility = ViewStates.Visible;
 			_search.Visibility = ViewStates.Gone;
 			_listResults.Visibility = ViewStates.Gone;
+			_clear.Visibility = ViewStates.Gone;
 
 			_drawerArrowDrawable.setParameter(0);
 			_drawerArrowDrawable.setFlip(false);

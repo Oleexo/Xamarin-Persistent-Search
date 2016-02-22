@@ -8,7 +8,7 @@ using Android.Widget;
 using Android.OS;
 
 namespace Orion.Xam.Android.SearchBox.Sample {
-	[Activity(Label = "Orion.Xam.Android.SearchBox.Sample", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity(Label = "SearchBox Sample", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity {
 		int count = 1;
 
