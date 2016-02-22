@@ -46,9 +46,6 @@ namespace Orion.Xam.Android.SearchBox
 			// aapt resource value: 0x7f010010
 			public static int ambientEnabled = 2130771984;
 			
-			// aapt resource value: 0x7f010014
-			public static int buttonSize = 2130771988;
-			
 			// aapt resource value: 0x7f010001
 			public static int cameraBearing = 2130771969;
 			
@@ -67,11 +64,8 @@ namespace Orion.Xam.Android.SearchBox
 			// aapt resource value: 0x7f010013
 			public static int circleCrop = 2130771987;
 			
-			// aapt resource value: 0x7f010015
-			public static int colorScheme = 2130771989;
-			
-			// aapt resource value: 0x7f010019
-			public static int drawableRight = 2130771993;
+			// aapt resource value: 0x7f010016
+			public static int drawableRight = 2130771990;
 			
 			// aapt resource value: 0x7f010012
 			public static int imageAspectRatio = 2130771986;
@@ -85,14 +79,11 @@ namespace Orion.Xam.Android.SearchBox
 			// aapt resource value: 0x7f010000
 			public static int mapType = 2130771968;
 			
-			// aapt resource value: 0x7f010018
-			public static int mapsResults = 2130771992;
+			// aapt resource value: 0x7f010015
+			public static int mapsResults = 2130771989;
 			
-			// aapt resource value: 0x7f010017
-			public static int placeholder = 2130771991;
-			
-			// aapt resource value: 0x7f010016
-			public static int scopeUris = 2130771990;
+			// aapt resource value: 0x7f010014
+			public static int placeholder = 2130771988;
 			
 			// aapt resource value: 0x7f010007
 			public static int uiCompass = 2130771975;
@@ -134,86 +125,41 @@ namespace Orion.Xam.Android.SearchBox
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f05000e
-			public static int common_action_bar_splitter = 2131034126;
+			// aapt resource value: 0x7f060009
+			public static int common_action_bar_splitter = 2131099657;
 			
-			// aapt resource value: 0x7f050017
-			public static int common_google_signin_btn_text_dark = 2131034135;
+			// aapt resource value: 0x7f060000
+			public static int common_signin_btn_dark_text_default = 2131099648;
 			
-			// aapt resource value: 0x7f05000f
-			public static int common_google_signin_btn_text_dark_default = 2131034127;
+			// aapt resource value: 0x7f060002
+			public static int common_signin_btn_dark_text_disabled = 2131099650;
 			
-			// aapt resource value: 0x7f050011
-			public static int common_google_signin_btn_text_dark_disabled = 2131034129;
+			// aapt resource value: 0x7f060003
+			public static int common_signin_btn_dark_text_focused = 2131099651;
 			
-			// aapt resource value: 0x7f050012
-			public static int common_google_signin_btn_text_dark_focused = 2131034130;
+			// aapt resource value: 0x7f060001
+			public static int common_signin_btn_dark_text_pressed = 2131099649;
 			
-			// aapt resource value: 0x7f050010
-			public static int common_google_signin_btn_text_dark_pressed = 2131034128;
+			// aapt resource value: 0x7f060008
+			public static int common_signin_btn_default_background = 2131099656;
 			
-			// aapt resource value: 0x7f050018
-			public static int common_google_signin_btn_text_light = 2131034136;
+			// aapt resource value: 0x7f060004
+			public static int common_signin_btn_light_text_default = 2131099652;
 			
-			// aapt resource value: 0x7f050013
-			public static int common_google_signin_btn_text_light_default = 2131034131;
+			// aapt resource value: 0x7f060006
+			public static int common_signin_btn_light_text_disabled = 2131099654;
 			
-			// aapt resource value: 0x7f050015
-			public static int common_google_signin_btn_text_light_disabled = 2131034133;
+			// aapt resource value: 0x7f060007
+			public static int common_signin_btn_light_text_focused = 2131099655;
 			
-			// aapt resource value: 0x7f050016
-			public static int common_google_signin_btn_text_light_focused = 2131034134;
+			// aapt resource value: 0x7f060005
+			public static int common_signin_btn_light_text_pressed = 2131099653;
 			
-			// aapt resource value: 0x7f050014
-			public static int common_google_signin_btn_text_light_pressed = 2131034132;
+			// aapt resource value: 0x7f06000a
+			public static int common_signin_btn_text_dark = 2131099658;
 			
-			// aapt resource value: 0x7f050019
-			public static int common_plus_signin_btn_text_dark = 2131034137;
-			
-			// aapt resource value: 0x7f050006
-			public static int common_plus_signin_btn_text_dark_default = 2131034118;
-			
-			// aapt resource value: 0x7f050008
-			public static int common_plus_signin_btn_text_dark_disabled = 2131034120;
-			
-			// aapt resource value: 0x7f050009
-			public static int common_plus_signin_btn_text_dark_focused = 2131034121;
-			
-			// aapt resource value: 0x7f050007
-			public static int common_plus_signin_btn_text_dark_pressed = 2131034119;
-			
-			// aapt resource value: 0x7f05001a
-			public static int common_plus_signin_btn_text_light = 2131034138;
-			
-			// aapt resource value: 0x7f05000a
-			public static int common_plus_signin_btn_text_light_default = 2131034122;
-			
-			// aapt resource value: 0x7f05000c
-			public static int common_plus_signin_btn_text_light_disabled = 2131034124;
-			
-			// aapt resource value: 0x7f05000d
-			public static int common_plus_signin_btn_text_light_focused = 2131034125;
-			
-			// aapt resource value: 0x7f05000b
-			public static int common_plus_signin_btn_text_light_pressed = 2131034123;
-			
-			// aapt resource value: 0x7f050002
-			public static int place_autocomplete_prediction_primary_text = 2131034114;
-			
-			// aapt resource value: 0x7f050003
-			public static int place_autocomplete_prediction_primary_text_highlight = 2131034115;
-			
-			// aapt resource value: 0x7f050004
-			public static int place_autocomplete_prediction_secondary_text = 2131034116;
-			
-			// aapt resource value: 0x7f050001
-			public static int place_autocomplete_search_hint = 2131034113;
-			
-			// aapt resource value: 0x7f050000
-			public static int place_autocomplete_search_text = 2131034112;
-			
-			// aapt resource value: 0x7f050005
-			public static int place_autocomplete_separator = 2131034117;
+			// aapt resource value: 0x7f06000b
+			public static int common_signin_btn_text_light = 2131099659;
 			
 			static Color()
 			{
@@ -225,49 +171,6 @@ namespace Orion.Xam.Android.SearchBox
 			}
 		}
 		
-		public partial class Dimension
-		{
-			
-			// aapt resource value: 0x7f060000
-			public static int place_autocomplete_button_padding = 2131099648;
-			
-			// aapt resource value: 0x7f060008
-			public static int place_autocomplete_powered_by_google_height = 2131099656;
-			
-			// aapt resource value: 0x7f060009
-			public static int place_autocomplete_powered_by_google_start = 2131099657;
-			
-			// aapt resource value: 0x7f060003
-			public static int place_autocomplete_prediction_height = 2131099651;
-			
-			// aapt resource value: 0x7f060004
-			public static int place_autocomplete_prediction_horizontal_margin = 2131099652;
-			
-			// aapt resource value: 0x7f060005
-			public static int place_autocomplete_prediction_primary_text = 2131099653;
-			
-			// aapt resource value: 0x7f060006
-			public static int place_autocomplete_prediction_secondary_text = 2131099654;
-			
-			// aapt resource value: 0x7f060002
-			public static int place_autocomplete_progress_horizontal_margin = 2131099650;
-			
-			// aapt resource value: 0x7f060001
-			public static int place_autocomplete_progress_size = 2131099649;
-			
-			// aapt resource value: 0x7f060007
-			public static int place_autocomplete_separator_start = 2131099655;
-			
-			static Dimension()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Dimension()
-			{
-			}
-		}
-		
 		public partial class Drawable
 		{
 			
@@ -275,148 +178,94 @@ namespace Orion.Xam.Android.SearchBox
 			public static int common_full_open_on_phone = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public static int common_google_signin_btn_icon_dark = 2130837505;
+			public static int common_ic_googleplayservices = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public static int common_google_signin_btn_icon_dark_disabled = 2130837506;
+			public static int common_signin_btn_icon_dark = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public static int common_google_signin_btn_icon_dark_focused = 2130837507;
+			public static int common_signin_btn_icon_disabled_dark = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public static int common_google_signin_btn_icon_dark_normal = 2130837508;
+			public static int common_signin_btn_icon_disabled_focus_dark = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public static int common_google_signin_btn_icon_dark_pressed = 2130837509;
+			public static int common_signin_btn_icon_disabled_focus_light = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public static int common_google_signin_btn_icon_light = 2130837510;
+			public static int common_signin_btn_icon_disabled_light = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public static int common_google_signin_btn_icon_light_disabled = 2130837511;
+			public static int common_signin_btn_icon_focus_dark = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public static int common_google_signin_btn_icon_light_focused = 2130837512;
+			public static int common_signin_btn_icon_focus_light = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public static int common_google_signin_btn_icon_light_normal = 2130837513;
+			public static int common_signin_btn_icon_light = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public static int common_google_signin_btn_icon_light_pressed = 2130837514;
+			public static int common_signin_btn_icon_normal_dark = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public static int common_google_signin_btn_text_dark = 2130837515;
+			public static int common_signin_btn_icon_normal_light = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public static int common_google_signin_btn_text_dark_disabled = 2130837516;
+			public static int common_signin_btn_icon_pressed_dark = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public static int common_google_signin_btn_text_dark_focused = 2130837517;
+			public static int common_signin_btn_icon_pressed_light = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public static int common_google_signin_btn_text_dark_normal = 2130837518;
+			public static int common_signin_btn_text_dark = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public static int common_google_signin_btn_text_dark_pressed = 2130837519;
+			public static int common_signin_btn_text_disabled_dark = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public static int common_google_signin_btn_text_light = 2130837520;
+			public static int common_signin_btn_text_disabled_focus_dark = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public static int common_google_signin_btn_text_light_disabled = 2130837521;
+			public static int common_signin_btn_text_disabled_focus_light = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public static int common_google_signin_btn_text_light_focused = 2130837522;
+			public static int common_signin_btn_text_disabled_light = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public static int common_google_signin_btn_text_light_normal = 2130837523;
+			public static int common_signin_btn_text_focus_dark = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public static int common_google_signin_btn_text_light_pressed = 2130837524;
+			public static int common_signin_btn_text_focus_light = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public static int common_ic_googleplayservices = 2130837525;
+			public static int common_signin_btn_text_light = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public static int common_plus_signin_btn_icon_dark = 2130837526;
+			public static int common_signin_btn_text_normal_dark = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public static int common_plus_signin_btn_icon_dark_disabled = 2130837527;
+			public static int common_signin_btn_text_normal_light = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public static int common_plus_signin_btn_icon_dark_focused = 2130837528;
+			public static int common_signin_btn_text_pressed_dark = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public static int common_plus_signin_btn_icon_dark_normal = 2130837529;
+			public static int common_signin_btn_text_pressed_light = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public static int common_plus_signin_btn_icon_dark_pressed = 2130837530;
+			public static int ic_action_mic = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public static int common_plus_signin_btn_icon_light = 2130837531;
+			public static int ic_clear = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public static int common_plus_signin_btn_icon_light_disabled = 2130837532;
+			public static int ic_more_vert_black_24dp = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public static int common_plus_signin_btn_icon_light_focused = 2130837533;
+			public static int powered_by_google_dark = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public static int common_plus_signin_btn_icon_light_normal = 2130837534;
-			
-			// aapt resource value: 0x7f02001f
-			public static int common_plus_signin_btn_icon_light_pressed = 2130837535;
-			
-			// aapt resource value: 0x7f020020
-			public static int common_plus_signin_btn_text_dark = 2130837536;
-			
-			// aapt resource value: 0x7f020021
-			public static int common_plus_signin_btn_text_dark_disabled = 2130837537;
-			
-			// aapt resource value: 0x7f020022
-			public static int common_plus_signin_btn_text_dark_focused = 2130837538;
-			
-			// aapt resource value: 0x7f020023
-			public static int common_plus_signin_btn_text_dark_normal = 2130837539;
-			
-			// aapt resource value: 0x7f020024
-			public static int common_plus_signin_btn_text_dark_pressed = 2130837540;
-			
-			// aapt resource value: 0x7f020025
-			public static int common_plus_signin_btn_text_light = 2130837541;
-			
-			// aapt resource value: 0x7f020026
-			public static int common_plus_signin_btn_text_light_disabled = 2130837542;
-			
-			// aapt resource value: 0x7f020027
-			public static int common_plus_signin_btn_text_light_focused = 2130837543;
-			
-			// aapt resource value: 0x7f020028
-			public static int common_plus_signin_btn_text_light_normal = 2130837544;
-			
-			// aapt resource value: 0x7f020029
-			public static int common_plus_signin_btn_text_light_pressed = 2130837545;
-			
-			// aapt resource value: 0x7f02002a
-			public static int ic_action_mic = 2130837546;
-			
-			// aapt resource value: 0x7f02002b
-			public static int ic_clear = 2130837547;
-			
-			// aapt resource value: 0x7f02002c
-			public static int ic_more_vert_black_24dp = 2130837548;
-			
-			// aapt resource value: 0x7f02002d
-			public static int places_ic_clear = 2130837549;
-			
-			// aapt resource value: 0x7f02002e
-			public static int places_ic_search = 2130837550;
-			
-			// aapt resource value: 0x7f02002f
-			public static int powered_by_google_dark = 2130837551;
-			
-			// aapt resource value: 0x7f020030
-			public static int powered_by_google_light = 2130837552;
+			public static int powered_by_google_light = 2130837534;
 			
 			static Drawable()
 			{
@@ -431,110 +280,68 @@ namespace Orion.Xam.Android.SearchBox
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f090005
-			public static int adjust_height = 2131296261;
+			// aapt resource value: 0x7f080005
+			public static int adjust_height = 2131230725;
 			
-			// aapt resource value: 0x7f090006
-			public static int adjust_width = 2131296262;
+			// aapt resource value: 0x7f080006
+			public static int adjust_width = 2131230726;
 			
-			// aapt resource value: 0x7f09000a
-			public static int auto = 2131296266;
+			// aapt resource value: 0x7f080014
+			public static int border = 2131230740;
 			
-			// aapt resource value: 0x7f090022
-			public static int border = 2131296290;
+			// aapt resource value: 0x7f08000f
+			public static int clear = 2131230735;
 			
-			// aapt resource value: 0x7f09001d
-			public static int clear = 2131296285;
+			// aapt resource value: 0x7f080000
+			public static int hybrid = 2131230720;
 			
-			// aapt resource value: 0x7f09000b
-			public static int dark = 2131296267;
+			// aapt resource value: 0x7f080011
+			public static int icon = 2131230737;
 			
-			// aapt resource value: 0x7f090000
-			public static int hybrid = 2131296256;
+			// aapt resource value: 0x7f080010
+			public static int list_button = 2131230736;
 			
-			// aapt resource value: 0x7f09001f
-			public static int icon = 2131296287;
+			// aapt resource value: 0x7f080008
+			public static int list_results = 2131230728;
 			
-			// aapt resource value: 0x7f090007
-			public static int icon_only = 2131296263;
+			// aapt resource value: 0x7f08000c
+			public static int mic = 2131230732;
 			
-			// aapt resource value: 0x7f09000c
-			public static int light = 2131296268;
+			// aapt resource value: 0x7f080001
+			public static int none = 2131230721;
 			
-			// aapt resource value: 0x7f09001e
-			public static int list_button = 2131296286;
+			// aapt resource value: 0x7f080002
+			public static int normal = 2131230722;
 			
-			// aapt resource value: 0x7f090016
-			public static int list_results = 2131296278;
+			// aapt resource value: 0x7f08000e
+			public static int overflow = 2131230734;
 			
-			// aapt resource value: 0x7f09001a
-			public static int mic = 2131296282;
+			// aapt resource value: 0x7f08000a
+			public static int placeholder = 2131230730;
 			
-			// aapt resource value: 0x7f090001
-			public static int none = 2131296257;
+			// aapt resource value: 0x7f080007
+			public static int root = 2131230727;
 			
-			// aapt resource value: 0x7f090002
-			public static int normal = 2131296258;
+			// aapt resource value: 0x7f08000b
+			public static int root_list_button = 2131230731;
 			
-			// aapt resource value: 0x7f09001c
-			public static int overflow = 2131296284;
+			// aapt resource value: 0x7f080003
+			public static int satellite = 2131230723;
 			
-			// aapt resource value: 0x7f09000f
-			public static int place_autocomplete_clear_button = 2131296271;
+			// aapt resource value: 0x7f08000d
+			public static int search = 2131230733;
 			
-			// aapt resource value: 0x7f090011
-			public static int place_autocomplete_powered_by_google = 2131296273;
+			// aapt resource value: 0x7f080009
+			public static int searchArea = 2131230729;
 			
-			// aapt resource value: 0x7f090013
-			public static int place_autocomplete_prediction_primary_text = 2131296275;
+			// aapt resource value: 0x7f080004
+			public static int terrain = 2131230724;
 			
-			// aapt resource value: 0x7f090014
-			public static int place_autocomplete_prediction_secondary_text = 2131296276;
+			// aapt resource value: 0x7f080012
+			public static int title = 2131230738;
 			
-			// aapt resource value: 0x7f090012
-			public static int place_autocomplete_progress = 2131296274;
-			
-			// aapt resource value: 0x7f09000d
-			public static int place_autocomplete_search_button = 2131296269;
-			
-			// aapt resource value: 0x7f09000e
-			public static int place_autocomplete_search_input = 2131296270;
-			
-			// aapt resource value: 0x7f090010
-			public static int place_autocomplete_separator = 2131296272;
-			
-			// aapt resource value: 0x7f090018
-			public static int placeholder = 2131296280;
-			
-			// aapt resource value: 0x7f090015
-			public static int root = 2131296277;
-			
-			// aapt resource value: 0x7f090019
-			public static int root_list_button = 2131296281;
-			
-			// aapt resource value: 0x7f090003
-			public static int satellite = 2131296259;
-			
-			// aapt resource value: 0x7f09001b
-			public static int search = 2131296283;
-			
-			// aapt resource value: 0x7f090017
-			public static int searchArea = 2131296279;
-			
-			// aapt resource value: 0x7f090008
-			public static int standard = 2131296264;
-			
-			// aapt resource value: 0x7f090004
-			public static int terrain = 2131296260;
-			
-			// aapt resource value: 0x7f090020
-			public static int title = 2131296288;
-			
-			// aapt resource value: 0x7f090021
-			public static int up = 2131296289;
-			
-			// aapt resource value: 0x7f090009
-			public static int wide = 2131296265;
+			// aapt resource value: 0x7f080013
+			public static int up = 2131230739;
 			
 			static Id()
 			{
@@ -549,8 +356,8 @@ namespace Orion.Xam.Android.SearchBox
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f080000
-			public static int google_play_services_version = 2131230720;
+			// aapt resource value: 0x7f070000
+			public static int google_play_services_version = 2131165184;
 			
 			static Integer()
 			{
@@ -566,22 +373,10 @@ namespace Orion.Xam.Android.SearchBox
 		{
 			
 			// aapt resource value: 0x7f030000
-			public static int place_autocomplete_fragment = 2130903040;
+			public static int SearchBox = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public static int place_autocomplete_item_powered_by_google = 2130903041;
-			
-			// aapt resource value: 0x7f030002
-			public static int place_autocomplete_item_prediction = 2130903042;
-			
-			// aapt resource value: 0x7f030003
-			public static int place_autocomplete_progress = 2130903043;
-			
-			// aapt resource value: 0x7f030004
-			public static int SearchBox = 2130903044;
-			
-			// aapt resource value: 0x7f030005
-			public static int SearchOption = 2130903045;
+			public static int SearchOption = 2130903041;
 			
 			static Layout()
 			{
@@ -596,110 +391,113 @@ namespace Orion.Xam.Android.SearchBox
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f070022
-			public static int ApplicationName = 2131165218;
+			// aapt resource value: 0x7f050023
+			public static int ApplicationName = 2131034147;
 			
-			// aapt resource value: 0x7f070021
-			public static int Hello = 2131165217;
+			// aapt resource value: 0x7f050022
+			public static int Hello = 2131034146;
 			
-			// aapt resource value: 0x7f070003
-			public static int auth_google_play_services_client_facebook_display_name = 2131165187;
+			// aapt resource value: 0x7f050001
+			public static int auth_google_play_services_client_facebook_display_name = 2131034113;
 			
-			// aapt resource value: 0x7f070002
-			public static int auth_google_play_services_client_google_display_name = 2131165186;
+			// aapt resource value: 0x7f050000
+			public static int auth_google_play_services_client_google_display_name = 2131034112;
 			
-			// aapt resource value: 0x7f07001a
-			public static int common_google_play_services_api_unavailable_text = 2131165210;
+			// aapt resource value: 0x7f050004
+			public static int common_android_wear_notification_needs_update_text = 2131034116;
 			
-			// aapt resource value: 0x7f07000c
-			public static int common_google_play_services_enable_button = 2131165196;
+			// aapt resource value: 0x7f050011
+			public static int common_android_wear_update_text = 2131034129;
 			
-			// aapt resource value: 0x7f07000b
-			public static int common_google_play_services_enable_text = 2131165195;
+			// aapt resource value: 0x7f05000f
+			public static int common_android_wear_update_title = 2131034127;
 			
-			// aapt resource value: 0x7f07000a
-			public static int common_google_play_services_enable_title = 2131165194;
+			// aapt resource value: 0x7f05001d
+			public static int common_google_play_services_api_unavailable_text = 2131034141;
 			
-			// aapt resource value: 0x7f070009
-			public static int common_google_play_services_install_button = 2131165193;
+			// aapt resource value: 0x7f05000d
+			public static int common_google_play_services_enable_button = 2131034125;
 			
-			// aapt resource value: 0x7f070007
-			public static int common_google_play_services_install_text_phone = 2131165191;
+			// aapt resource value: 0x7f05000c
+			public static int common_google_play_services_enable_text = 2131034124;
 			
-			// aapt resource value: 0x7f070008
-			public static int common_google_play_services_install_text_tablet = 2131165192;
+			// aapt resource value: 0x7f05000b
+			public static int common_google_play_services_enable_title = 2131034123;
 			
-			// aapt resource value: 0x7f070006
-			public static int common_google_play_services_install_title = 2131165190;
+			// aapt resource value: 0x7f050006
+			public static int common_google_play_services_error_notification_requested_by_msg = 2131034118;
 			
-			// aapt resource value: 0x7f070015
-			public static int common_google_play_services_invalid_account_text = 2131165205;
+			// aapt resource value: 0x7f05000a
+			public static int common_google_play_services_install_button = 2131034122;
 			
-			// aapt resource value: 0x7f070014
-			public static int common_google_play_services_invalid_account_title = 2131165204;
+			// aapt resource value: 0x7f050008
+			public static int common_google_play_services_install_text_phone = 2131034120;
 			
-			// aapt resource value: 0x7f070013
-			public static int common_google_play_services_network_error_text = 2131165203;
+			// aapt resource value: 0x7f050009
+			public static int common_google_play_services_install_text_tablet = 2131034121;
 			
-			// aapt resource value: 0x7f070012
-			public static int common_google_play_services_network_error_title = 2131165202;
+			// aapt resource value: 0x7f050007
+			public static int common_google_play_services_install_title = 2131034119;
 			
-			// aapt resource value: 0x7f070005
-			public static int common_google_play_services_notification_ticker = 2131165189;
+			// aapt resource value: 0x7f050017
+			public static int common_google_play_services_invalid_account_text = 2131034135;
 			
-			// aapt resource value: 0x7f07001e
-			public static int common_google_play_services_restricted_profile_text = 2131165214;
+			// aapt resource value: 0x7f050016
+			public static int common_google_play_services_invalid_account_title = 2131034134;
 			
-			// aapt resource value: 0x7f07001d
-			public static int common_google_play_services_restricted_profile_title = 2131165213;
+			// aapt resource value: 0x7f050005
+			public static int common_google_play_services_needs_enabling_title = 2131034117;
 			
-			// aapt resource value: 0x7f07001c
-			public static int common_google_play_services_sign_in_failed_text = 2131165212;
+			// aapt resource value: 0x7f050015
+			public static int common_google_play_services_network_error_text = 2131034133;
 			
-			// aapt resource value: 0x7f07001b
-			public static int common_google_play_services_sign_in_failed_title = 2131165211;
+			// aapt resource value: 0x7f050014
+			public static int common_google_play_services_network_error_title = 2131034132;
 			
-			// aapt resource value: 0x7f070004
-			public static int common_google_play_services_unknown_issue = 2131165188;
+			// aapt resource value: 0x7f050003
+			public static int common_google_play_services_notification_needs_update_title = 2131034115;
 			
-			// aapt resource value: 0x7f070017
-			public static int common_google_play_services_unsupported_text = 2131165207;
+			// aapt resource value: 0x7f050002
+			public static int common_google_play_services_notification_ticker = 2131034114;
 			
-			// aapt resource value: 0x7f070016
-			public static int common_google_play_services_unsupported_title = 2131165206;
+			// aapt resource value: 0x7f05001f
+			public static int common_google_play_services_sign_in_failed_text = 2131034143;
 			
-			// aapt resource value: 0x7f070018
-			public static int common_google_play_services_update_button = 2131165208;
+			// aapt resource value: 0x7f05001e
+			public static int common_google_play_services_sign_in_failed_title = 2131034142;
 			
-			// aapt resource value: 0x7f07000e
-			public static int common_google_play_services_update_text = 2131165198;
+			// aapt resource value: 0x7f050018
+			public static int common_google_play_services_unknown_issue = 2131034136;
 			
-			// aapt resource value: 0x7f07000d
-			public static int common_google_play_services_update_title = 2131165197;
+			// aapt resource value: 0x7f05001a
+			public static int common_google_play_services_unsupported_text = 2131034138;
 			
-			// aapt resource value: 0x7f070011
-			public static int common_google_play_services_updating_text = 2131165201;
+			// aapt resource value: 0x7f050019
+			public static int common_google_play_services_unsupported_title = 2131034137;
 			
-			// aapt resource value: 0x7f070010
-			public static int common_google_play_services_updating_title = 2131165200;
+			// aapt resource value: 0x7f05001b
+			public static int common_google_play_services_update_button = 2131034139;
 			
-			// aapt resource value: 0x7f07000f
-			public static int common_google_play_services_wear_update_text = 2131165199;
+			// aapt resource value: 0x7f050010
+			public static int common_google_play_services_update_text = 2131034128;
 			
-			// aapt resource value: 0x7f070019
-			public static int common_open_on_phone = 2131165209;
+			// aapt resource value: 0x7f05000e
+			public static int common_google_play_services_update_title = 2131034126;
 			
-			// aapt resource value: 0x7f07001f
-			public static int common_signin_button_text = 2131165215;
+			// aapt resource value: 0x7f050013
+			public static int common_google_play_services_updating_text = 2131034131;
 			
-			// aapt resource value: 0x7f070020
-			public static int common_signin_button_text_long = 2131165216;
+			// aapt resource value: 0x7f050012
+			public static int common_google_play_services_updating_title = 2131034130;
 			
-			// aapt resource value: 0x7f070001
-			public static int place_autocomplete_clear_button = 2131165185;
+			// aapt resource value: 0x7f05001c
+			public static int common_open_on_phone = 2131034140;
 			
-			// aapt resource value: 0x7f070000
-			public static int place_autocomplete_search_hint = 2131165184;
+			// aapt resource value: 0x7f050020
+			public static int common_signin_button_text = 2131034144;
+			
+			// aapt resource value: 0x7f050021
+			public static int common_signin_button_text_long = 2131034145;
 			
 			static String()
 			{
@@ -799,9 +597,9 @@ namespace Orion.Xam.Android.SearchBox
 			public static int MapAttrs_zOrderOnTop = 14;
 			
 			public static int[] SearchBoxView = new int[] {
-					2130771991,
-					2130771992,
-					2130771993};
+					2130771988,
+					2130771989,
+					2130771990};
 			
 			// aapt resource value: 2
 			public static int SearchBoxView_drawableRight = 2;
@@ -811,20 +609,6 @@ namespace Orion.Xam.Android.SearchBox
 			
 			// aapt resource value: 0
 			public static int SearchBoxView_placeholder = 0;
-			
-			public static int[] SignInButton = new int[] {
-					2130771988,
-					2130771989,
-					2130771990};
-			
-			// aapt resource value: 0
-			public static int SignInButton_buttonSize = 0;
-			
-			// aapt resource value: 1
-			public static int SignInButton_colorScheme = 1;
-			
-			// aapt resource value: 2
-			public static int SignInButton_scopeUris = 2;
 			
 			static Styleable()
 			{
