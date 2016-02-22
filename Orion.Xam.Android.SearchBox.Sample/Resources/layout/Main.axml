@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							xmlns:app="http://schemas.android.com/apk/res-auto"
+							android:orientation="vertical"
+							android:background="#BDBDBD"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent">
+	<Orion.Xam.Android.SearchBox.SearchBoxView
+		android:id="@+id/searchbox"
+		app:placeholder="Try here"
+		app:drawableRight="@drawable/ic_more_vert_black_24dp"
+		app:mapsResults="true"
+		android:layout_marginTop="20dp"
+		android:layout_marginRight="8dp"
+		android:layout_marginLeft="8dp"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent" />
+</LinearLayout>

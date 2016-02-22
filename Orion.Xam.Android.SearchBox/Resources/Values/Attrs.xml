@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+	<declare-styleable name="SearchBoxView">
+		<attr name="placeholder" format="string" />
+		<attr name="mapsResults" format="boolean" />
+		<attr name="drawableRight" format="integer" />
+	</declare-styleable>
+</resources>
