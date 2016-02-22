@@ -133,6 +133,7 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			global::Orion.Xam.Android.SearchBox.Resource.Drawable.common_plus_signin_btn_text_light_normal = global::Orion.Xam.Android.SearchBox.Sample.Resource.Drawable.common_plus_signin_btn_text_light_normal;
 			global::Orion.Xam.Android.SearchBox.Resource.Drawable.common_plus_signin_btn_text_light_pressed = global::Orion.Xam.Android.SearchBox.Sample.Resource.Drawable.common_plus_signin_btn_text_light_pressed;
 			global::Orion.Xam.Android.SearchBox.Resource.Drawable.ic_action_mic = global::Orion.Xam.Android.SearchBox.Sample.Resource.Drawable.ic_action_mic;
+			global::Orion.Xam.Android.SearchBox.Resource.Drawable.ic_clear = global::Orion.Xam.Android.SearchBox.Sample.Resource.Drawable.ic_clear;
 			global::Orion.Xam.Android.SearchBox.Resource.Drawable.ic_more_vert_black_24dp = global::Orion.Xam.Android.SearchBox.Sample.Resource.Drawable.ic_more_vert_black_24dp;
 			global::Orion.Xam.Android.SearchBox.Resource.Drawable.places_ic_clear = global::Orion.Xam.Android.SearchBox.Sample.Resource.Drawable.places_ic_clear;
 			global::Orion.Xam.Android.SearchBox.Resource.Drawable.places_ic_search = global::Orion.Xam.Android.SearchBox.Sample.Resource.Drawable.places_ic_search;
@@ -142,6 +143,7 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			global::Orion.Xam.Android.SearchBox.Resource.Id.adjust_width = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.adjust_width;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.auto = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.auto;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.border = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.border;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.clear = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.clear;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.dark = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.dark;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.hybrid = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.hybrid;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.icon = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.icon;
@@ -163,6 +165,7 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			global::Orion.Xam.Android.SearchBox.Resource.Id.place_autocomplete_separator = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.place_autocomplete_separator;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.placeholder = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.placeholder;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.root = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.root;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.root_list_button = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.root_list_button;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.satellite = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.satellite;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.search = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.search;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.searchArea = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.searchArea;
@@ -622,22 +625,25 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			public const int ic_action_mic = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int ic_more_vert_black_24dp = 2130837547;
+			public const int ic_clear = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int Icon = 2130837548;
+			public const int ic_more_vert_black_24dp = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int places_ic_clear = 2130837549;
+			public const int Icon = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int places_ic_search = 2130837550;
+			public const int places_ic_clear = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int powered_by_google_dark = 2130837551;
+			public const int places_ic_search = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int powered_by_google_light = 2130837552;
+			public const int powered_by_google_dark = 2130837552;
+			
+			// aapt resource value: 0x7f020031
+			public const int powered_by_google_light = 2130837553;
 			
 			static Drawable()
 			{
@@ -661,8 +667,11 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			// aapt resource value: 0x7f090003
 			public const int auto = 2131296259;
 			
-			// aapt resource value: 0x7f090021
-			public const int border = 2131296289;
+			// aapt resource value: 0x7f090023
+			public const int border = 2131296291;
+			
+			// aapt resource value: 0x7f09001e
+			public const int clear = 2131296286;
 			
 			// aapt resource value: 0x7f090004
 			public const int dark = 2131296260;
@@ -670,8 +679,8 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			// aapt resource value: 0x7f090006
 			public const int hybrid = 2131296262;
 			
-			// aapt resource value: 0x7f09001e
-			public const int icon = 2131296286;
+			// aapt resource value: 0x7f090020
+			public const int icon = 2131296288;
 			
 			// aapt resource value: 0x7f090000
 			public const int icon_only = 2131296256;
@@ -679,8 +688,8 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			// aapt resource value: 0x7f090005
 			public const int light = 2131296261;
 			
-			// aapt resource value: 0x7f09001a
-			public const int list_button = 2131296282;
+			// aapt resource value: 0x7f09001f
+			public const int list_button = 2131296287;
 			
 			// aapt resource value: 0x7f090017
 			public const int list_results = 2131296279;
@@ -727,6 +736,9 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			// aapt resource value: 0x7f090016
 			public const int root = 2131296278;
 			
+			// aapt resource value: 0x7f09001a
+			public const int root_list_button = 2131296282;
+			
 			// aapt resource value: 0x7f090009
 			public const int satellite = 2131296265;
 			
@@ -745,11 +757,11 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			// aapt resource value: 0x7f09000a
 			public const int terrain = 2131296266;
 			
-			// aapt resource value: 0x7f09001f
-			public const int title = 2131296287;
+			// aapt resource value: 0x7f090021
+			public const int title = 2131296289;
 			
-			// aapt resource value: 0x7f090020
-			public const int up = 2131296288;
+			// aapt resource value: 0x7f090022
+			public const int up = 2131296290;
 			
 			// aapt resource value: 0x7f090002
 			public const int wide = 2131296258;

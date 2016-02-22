@@ -2,14 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Android.App;
 using Android.Content;
 using Android.Gms.Common.Apis;
 using Android.Gms.Location.Places;
 using Android.Gms.Maps.Model;
 using Android.Graphics.Drawables;
 using Android.Runtime;
-using Android.Speech;
 using Android.Text;
 using Android.Util;
 using Android.Views;
@@ -37,6 +35,7 @@ namespace Orion.Xam.Android.SearchBox {
 		private GoogleApiClient _googleApiClient;
 		private string _defaultPlacerHolder;
 		private Drawable _drawableRight;
+		private ImageView _clear;
 
 		#region Properties
 		public string PlaceHolder { get; set; }
@@ -122,6 +121,7 @@ namespace Orion.Xam.Android.SearchBox {
 			_overflow = FindViewById<ImageView>(Resource.Id.overflow);
 			_listButton = FindViewById<ImageView>(Resource.Id.list_button);
 			_placeholder = FindViewById<TextView>(Resource.Id.placeholder);
+			_clear = FindViewById<ImageView>(Resource.Id.clear);
 
 			_drawerArrowDrawable = new DrawerArrowDrawable(Resources);
 			_listButton.SetImageDrawable(_drawerArrowDrawable);
@@ -133,10 +133,15 @@ namespace Orion.Xam.Android.SearchBox {
 			_search.TextChanged += SearchOnTextChanged;
 			_listResults.ItemClick += ListResultsOnItemClick;
 			_overflow.Click += OverflowOnClick;
+			_clear.Click += ClearOnClick;
 		}
+
 		#endregion
 
 		#region Events methods
+		private void ClearOnClick(object sender, EventArgs eventArgs) {
+			ClearSearch();
+		}
 		private void OverflowOnClick(object sender, EventArgs eventArgs) {
 			DrawableRightClick?.Invoke(this, new SearchBoxEventArgs());
 		}
@@ -157,20 +162,18 @@ namespace Orion.Xam.Android.SearchBox {
 		}
 		#endregion
 
+		public void ClearSearch() {
+			_search.Text = string.Empty;
+			Search(string.Empty);
+		}
 		private void ToggleDrawableRight() {
 			if (_search == null || _overflow == null) {
 				return;
 			}
 			if (DrawableRight != null) {
-				var layoutParams = (RelativeLayout.LayoutParams) _search.LayoutParameters;
-				layoutParams.LeftMargin = 29;
-				_search.LayoutParameters = layoutParams;
 				_overflow.Visibility = ViewStates.Visible;
 			}
 			else {
-				var layoutParams = (RelativeLayout.LayoutParams) _search.LayoutParameters;
-				layoutParams.LeftMargin = 29 - 25;
-				_search.LayoutParameters = layoutParams;
 				_overflow.Visibility = ViewStates.Gone;
 			}
 		}
@@ -227,6 +230,7 @@ namespace Orion.Xam.Android.SearchBox {
 		}
 
 		private async void Search(string text) {
+			_clear.Visibility = string.IsNullOrEmpty(text) ? ViewStates.Invisible : ViewStates.Visible;
 			_filteredSources = await SearchAsync(text);
 			_listResults.Adapter = _resultAdapter = new SearchAdapter(_context, _filteredSources, _search);
 		}

@@ -401,19 +401,22 @@ namespace Orion.Xam.Android.SearchBox
 			public static int ic_action_mic = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public static int ic_more_vert_black_24dp = 2130837547;
+			public static int ic_clear = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public static int places_ic_clear = 2130837548;
+			public static int ic_more_vert_black_24dp = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public static int places_ic_search = 2130837549;
+			public static int places_ic_clear = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public static int powered_by_google_dark = 2130837550;
+			public static int places_ic_search = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public static int powered_by_google_light = 2130837551;
+			public static int powered_by_google_dark = 2130837551;
+			
+			// aapt resource value: 0x7f020030
+			public static int powered_by_google_light = 2130837552;
 			
 			static Drawable()
 			{
@@ -437,8 +440,11 @@ namespace Orion.Xam.Android.SearchBox
 			// aapt resource value: 0x7f09000a
 			public static int auto = 2131296266;
 			
-			// aapt resource value: 0x7f090020
-			public static int border = 2131296288;
+			// aapt resource value: 0x7f090022
+			public static int border = 2131296290;
+			
+			// aapt resource value: 0x7f09001d
+			public static int clear = 2131296285;
 			
 			// aapt resource value: 0x7f09000b
 			public static int dark = 2131296267;
@@ -446,8 +452,8 @@ namespace Orion.Xam.Android.SearchBox
 			// aapt resource value: 0x7f090000
 			public static int hybrid = 2131296256;
 			
-			// aapt resource value: 0x7f09001d
-			public static int icon = 2131296285;
+			// aapt resource value: 0x7f09001f
+			public static int icon = 2131296287;
 			
 			// aapt resource value: 0x7f090007
 			public static int icon_only = 2131296263;
@@ -455,8 +461,8 @@ namespace Orion.Xam.Android.SearchBox
 			// aapt resource value: 0x7f09000c
 			public static int light = 2131296268;
 			
-			// aapt resource value: 0x7f090019
-			public static int list_button = 2131296281;
+			// aapt resource value: 0x7f09001e
+			public static int list_button = 2131296286;
 			
 			// aapt resource value: 0x7f090016
 			public static int list_results = 2131296278;
@@ -503,6 +509,9 @@ namespace Orion.Xam.Android.SearchBox
 			// aapt resource value: 0x7f090015
 			public static int root = 2131296277;
 			
+			// aapt resource value: 0x7f090019
+			public static int root_list_button = 2131296281;
+			
 			// aapt resource value: 0x7f090003
 			public static int satellite = 2131296259;
 			
@@ -518,11 +527,11 @@ namespace Orion.Xam.Android.SearchBox
 			// aapt resource value: 0x7f090004
 			public static int terrain = 2131296260;
 			
-			// aapt resource value: 0x7f09001e
-			public static int title = 2131296286;
+			// aapt resource value: 0x7f090020
+			public static int title = 2131296288;
 			
-			// aapt resource value: 0x7f09001f
-			public static int up = 2131296287;
+			// aapt resource value: 0x7f090021
+			public static int up = 2131296289;
 			
 			// aapt resource value: 0x7f090009
 			public static int wide = 2131296265;

@@ -23,12 +23,12 @@
 			android:id="@+id/placeholder"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_alignBottom="@+id/list_button"
+			android:layout_alignBottom="@+id/root_list_button"
 			android:layout_alignParentTop="true"
 			android:layout_centerVertical="true"
 			android:layout_toLeftOf="@+id/mic"
 			android:layout_alignParentLeft="true"
-			android:layout_marginLeft="54dp"
+			android:layout_marginLeft="44dp"
 			android:singleLine="true"
 			android:gravity="center_vertical"
 			android:textColor="#6F6F6F"
@@ -39,8 +39,8 @@
 			android:layout_height="wrap_content"
 			android:layout_alignParentTop="true"
 			android:layout_alignParentLeft="true"
-			android:layout_marginLeft="29dp"
-			android:layout_alignBottom="@+id/list_button"
+			android:layout_marginLeft="44dp"
+			android:layout_alignBottom="@+id/root_list_button"
 			android:background="@null"
 			android:ems="10"
 			android:textColor="#212121"
@@ -56,25 +56,39 @@
 			android:layout_toLeftOf="@+id/overflow"
 			android:layout_alignWithParentIfMissing="true"
 			android:layout_marginRight="13dp"
-			android:layout_alignBottom="@+id/list_button"
+			android:layout_alignBottom="@+id/root_list_button"
 			android:visibility="gone"
 			android:src="@drawable/ic_action_mic" />
-		
+		<ImageView
+			android:id="@+id/clear"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:layout_alignParentTop="true"
+			android:layout_toLeftOf="@+id/mic"
+			android:layout_alignWithParentIfMissing="true"
+			android:layout_marginRight="13dp"
+			android:layout_alignBottom="@+id/root_list_button"
+			android:visibility="gone"
+			android:src="@drawable/ic_clear" />
 		<ImageView
 			android:id="@+id/overflow"
 			android:layout_width="25dp"
 			android:layout_height="25dp"
 			android:layout_alignParentRight="true"
 			android:layout_alignParentTop="true"
-			android:layout_marginRight="13dp"
-			android:layout_alignBottom="@+id/list_button"
+			android:layout_alignBottom="@+id/root_list_button"
 			android:visibility="gone"
 			android:src="@drawable/ic_more_vert_black_24dp"/>
-		<ImageView
-			android:id="@+id/list_button"
-			android:layout_width="25dp"
-			android:layout_height="25dp"
-			android:layout_marginLeft="8dp"
-			android:src="@drawable/ic_more_vert_black_24dp"/>
+		<RelativeLayout
+			android:id="@+id/root_list_button"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:padding="8dp">
+			<ImageView
+				android:id="@+id/list_button"
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:src="@drawable/ic_more_vert_black_24dp"/>
+		</RelativeLayout>
 	</RelativeLayout>
 </RelativeLayout>
