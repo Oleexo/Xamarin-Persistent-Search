@@ -179,6 +179,7 @@ namespace Orion.Xam.Android.SearchBox {
 				return;
 			}
 			if (DrawableRight != null) {
+				_overflow.SetImageDrawable(_drawableRight);
 				_overflow.Visibility = ViewStates.Visible;
 			}
 			else {
