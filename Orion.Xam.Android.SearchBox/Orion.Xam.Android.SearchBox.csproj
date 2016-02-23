@@ -15,7 +15,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -67,6 +67,7 @@
     <Compile Include="Events\SearchBoxEventArgs.cs" />
     <Compile Include="Events\SearchBoxItemSelectedEventArgs.cs" />
     <Compile Include="MapsSearchResult.cs" />
+    <Compile Include="ResourceIdManager.cs" />
     <Compile Include="SearchAdapter.cs" />
     <Compile Include="SearchBoxView.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -76,10 +77,9 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
-    <AndroidResource Include="Resources\layout\SearchOption.axml">
-      <SubType>AndroidResource</SubType>
+    <AndroidResource Include="Resources\layout\SearchOption.xml">
+      <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\SearchBox.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />
@@ -134,6 +134,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\search_box.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

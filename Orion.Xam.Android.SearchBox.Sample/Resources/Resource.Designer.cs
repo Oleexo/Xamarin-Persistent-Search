@@ -95,27 +95,27 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			global::Orion.Xam.Android.SearchBox.Resource.Drawable.powered_by_google_light = global::Orion.Xam.Android.SearchBox.Sample.Resource.Drawable.powered_by_google_light;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.adjust_height = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.adjust_height;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.adjust_width = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.adjust_width;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.border = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.border;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.clear = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.clear;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.hybrid = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.hybrid;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.icon = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.icon;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.list_button = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.list_button;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.list_results = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.list_results;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.mic = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.mic;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.none = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.none;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.normal = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.normal;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.overflow = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.overflow;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.placeholder = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.placeholder;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.root = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.root;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.root_list_button = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.root_list_button;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.satellite = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.satellite;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.search = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.search;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.searchArea = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.searchArea;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_border = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_border;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_clear = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_clear;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_icon = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_icon;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_list_button = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_list_button;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_list_results = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_list_results;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_mic = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_mic;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_overflow = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_overflow;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_placeholder = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_placeholder;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_root = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_root;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_root_list_button = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_root_list_button;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_search = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_search;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_searchArea = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_searchArea;
+			global::Orion.Xam.Android.SearchBox.Resource.Id.sb_title = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.sb_title;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.terrain = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.terrain;
-			global::Orion.Xam.Android.SearchBox.Resource.Id.title = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.title;
 			global::Orion.Xam.Android.SearchBox.Resource.Id.up = global::Orion.Xam.Android.SearchBox.Sample.Resource.Id.up;
 			global::Orion.Xam.Android.SearchBox.Resource.Integer.google_play_services_version = global::Orion.Xam.Android.SearchBox.Sample.Resource.Integer.google_play_services_version;
-			global::Orion.Xam.Android.SearchBox.Resource.Layout.SearchBox = global::Orion.Xam.Android.SearchBox.Sample.Resource.Layout.SearchBox;
+			global::Orion.Xam.Android.SearchBox.Resource.Layout.search_box = global::Orion.Xam.Android.SearchBox.Sample.Resource.Layout.search_box;
 			global::Orion.Xam.Android.SearchBox.Resource.Layout.SearchOption = global::Orion.Xam.Android.SearchBox.Sample.Resource.Layout.SearchOption;
 			global::Orion.Xam.Android.SearchBox.Resource.String.ApplicationName = global::Orion.Xam.Android.SearchBox.Sample.Resource.String.ApplicationName;
 			global::Orion.Xam.Android.SearchBox.Resource.String.Hello = global::Orion.Xam.Android.SearchBox.Sample.Resource.String.Hello;
@@ -446,26 +446,8 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			// aapt resource value: 0x7f080006
 			public const int adjust_width = 2131230726;
 			
-			// aapt resource value: 0x7f080015
-			public const int border = 2131230741;
-			
-			// aapt resource value: 0x7f080010
-			public const int clear = 2131230736;
-			
 			// aapt resource value: 0x7f080000
 			public const int hybrid = 2131230720;
-			
-			// aapt resource value: 0x7f080012
-			public const int icon = 2131230738;
-			
-			// aapt resource value: 0x7f080011
-			public const int list_button = 2131230737;
-			
-			// aapt resource value: 0x7f080009
-			public const int list_results = 2131230729;
-			
-			// aapt resource value: 0x7f08000d
-			public const int mic = 2131230733;
 			
 			// aapt resource value: 0x7f080001
 			public const int none = 2131230721;
@@ -473,35 +455,53 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			// aapt resource value: 0x7f080002
 			public const int normal = 2131230722;
 			
-			// aapt resource value: 0x7f08000f
-			public const int overflow = 2131230735;
-			
-			// aapt resource value: 0x7f08000b
-			public const int placeholder = 2131230731;
-			
-			// aapt resource value: 0x7f080008
-			public const int root = 2131230728;
-			
-			// aapt resource value: 0x7f08000c
-			public const int root_list_button = 2131230732;
-			
 			// aapt resource value: 0x7f080003
 			public const int satellite = 2131230723;
 			
+			// aapt resource value: 0x7f080015
+			public const int sb_border = 2131230741;
+			
+			// aapt resource value: 0x7f080010
+			public const int sb_clear = 2131230736;
+			
+			// aapt resource value: 0x7f080012
+			public const int sb_icon = 2131230738;
+			
+			// aapt resource value: 0x7f080011
+			public const int sb_list_button = 2131230737;
+			
+			// aapt resource value: 0x7f080009
+			public const int sb_list_results = 2131230729;
+			
+			// aapt resource value: 0x7f08000d
+			public const int sb_mic = 2131230733;
+			
+			// aapt resource value: 0x7f08000f
+			public const int sb_overflow = 2131230735;
+			
+			// aapt resource value: 0x7f08000b
+			public const int sb_placeholder = 2131230731;
+			
+			// aapt resource value: 0x7f080008
+			public const int sb_root = 2131230728;
+			
+			// aapt resource value: 0x7f08000c
+			public const int sb_root_list_button = 2131230732;
+			
 			// aapt resource value: 0x7f08000e
-			public const int search = 2131230734;
+			public const int sb_search = 2131230734;
 			
 			// aapt resource value: 0x7f08000a
-			public const int searchArea = 2131230730;
+			public const int sb_searchArea = 2131230730;
+			
+			// aapt resource value: 0x7f080013
+			public const int sb_title = 2131230739;
 			
 			// aapt resource value: 0x7f080007
 			public const int searchbox = 2131230727;
 			
 			// aapt resource value: 0x7f080004
 			public const int terrain = 2131230724;
-			
-			// aapt resource value: 0x7f080013
-			public const int title = 2131230739;
 			
 			// aapt resource value: 0x7f080014
 			public const int up = 2131230740;
@@ -539,7 +539,7 @@ namespace Orion.Xam.Android.SearchBox.Sample
 			public const int Main = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int SearchBox = 2130903041;
+			public const int search_box = 2130903041;
 			
 			// aapt resource value: 0x7f030002
 			public const int SearchOption = 2130903042;

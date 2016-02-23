@@ -35,13 +35,13 @@ namespace Orion.Xam.Android.SearchBox {
 				}
 			}
 
-			View border = convertView.FindViewById(Resource.Id.border);
+			View border = convertView.FindViewById(Resource.Id.sb_border);
 			if (position == 0) {
 				border.Visibility = ViewStates.Visible;
 			} else {
 				border.Visibility = ViewStates.Gone;
 			}
-			TextView title = convertView.FindViewById<TextView>(Resource.Id.title);
+			TextView title = convertView.FindViewById<TextView>(Resource.Id.sb_title);
 			title.Text  = option.Title;
 			//ImageView icon = convertView.FindViewById<ImageView>(Resource.Id.icon);
 			//icon.SetImageDrawable(option.Icon);

@@ -10,8 +10,6 @@ using Android.OS;
 namespace Orion.Xam.Android.SearchBox.Sample {
 	[Activity(Label = "SearchBox Sample", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity {
-		int count = 1;
-
 		protected override void OnCreate(Bundle bundle) {
 			base.OnCreate(bundle);
 
@@ -22,22 +20,18 @@ namespace Orion.Xam.Android.SearchBox.Sample {
 				new SearchResult {
 					Title = "Result 1"
 				},
-								new SearchResult {
+				new SearchResult {
 					Title = "Result 2"
 				},
-
-												new SearchResult {
+				new SearchResult {
 					Title = "Result 3"
 				},
-
-																new SearchResult {
+				new SearchResult {
 					Title = "Result 4"
 				},
-
-																				new SearchResult {
+				new SearchResult {
 					Title = "Result 5"
-				},
-
+				}
 			};
 		}
 	}

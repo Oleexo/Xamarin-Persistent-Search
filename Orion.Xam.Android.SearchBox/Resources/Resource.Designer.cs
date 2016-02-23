@@ -286,26 +286,8 @@ namespace Orion.Xam.Android.SearchBox
 			// aapt resource value: 0x7f080006
 			public static int adjust_width = 2131230726;
 			
-			// aapt resource value: 0x7f080014
-			public static int border = 2131230740;
-			
-			// aapt resource value: 0x7f08000f
-			public static int clear = 2131230735;
-			
 			// aapt resource value: 0x7f080000
 			public static int hybrid = 2131230720;
-			
-			// aapt resource value: 0x7f080011
-			public static int icon = 2131230737;
-			
-			// aapt resource value: 0x7f080010
-			public static int list_button = 2131230736;
-			
-			// aapt resource value: 0x7f080008
-			public static int list_results = 2131230728;
-			
-			// aapt resource value: 0x7f08000c
-			public static int mic = 2131230732;
 			
 			// aapt resource value: 0x7f080001
 			public static int none = 2131230721;
@@ -313,32 +295,50 @@ namespace Orion.Xam.Android.SearchBox
 			// aapt resource value: 0x7f080002
 			public static int normal = 2131230722;
 			
-			// aapt resource value: 0x7f08000e
-			public static int overflow = 2131230734;
-			
-			// aapt resource value: 0x7f08000a
-			public static int placeholder = 2131230730;
-			
-			// aapt resource value: 0x7f080007
-			public static int root = 2131230727;
-			
-			// aapt resource value: 0x7f08000b
-			public static int root_list_button = 2131230731;
-			
 			// aapt resource value: 0x7f080003
 			public static int satellite = 2131230723;
 			
+			// aapt resource value: 0x7f080014
+			public static int sb_border = 2131230740;
+			
+			// aapt resource value: 0x7f08000f
+			public static int sb_clear = 2131230735;
+			
+			// aapt resource value: 0x7f080011
+			public static int sb_icon = 2131230737;
+			
+			// aapt resource value: 0x7f080010
+			public static int sb_list_button = 2131230736;
+			
+			// aapt resource value: 0x7f080008
+			public static int sb_list_results = 2131230728;
+			
+			// aapt resource value: 0x7f08000c
+			public static int sb_mic = 2131230732;
+			
+			// aapt resource value: 0x7f08000e
+			public static int sb_overflow = 2131230734;
+			
+			// aapt resource value: 0x7f08000a
+			public static int sb_placeholder = 2131230730;
+			
+			// aapt resource value: 0x7f080007
+			public static int sb_root = 2131230727;
+			
+			// aapt resource value: 0x7f08000b
+			public static int sb_root_list_button = 2131230731;
+			
 			// aapt resource value: 0x7f08000d
-			public static int search = 2131230733;
+			public static int sb_search = 2131230733;
 			
 			// aapt resource value: 0x7f080009
-			public static int searchArea = 2131230729;
+			public static int sb_searchArea = 2131230729;
+			
+			// aapt resource value: 0x7f080012
+			public static int sb_title = 2131230738;
 			
 			// aapt resource value: 0x7f080004
 			public static int terrain = 2131230724;
-			
-			// aapt resource value: 0x7f080012
-			public static int title = 2131230738;
 			
 			// aapt resource value: 0x7f080013
 			public static int up = 2131230739;
@@ -373,7 +373,7 @@ namespace Orion.Xam.Android.SearchBox
 		{
 			
 			// aapt resource value: 0x7f030000
-			public static int SearchBox = 2130903040;
+			public static int search_box = 2130903040;
 			
 			// aapt resource value: 0x7f030001
 			public static int SearchOption = 2130903041;

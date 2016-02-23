@@ -1,32 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/root"
+	android:id="@+id/sb_root"
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content">
 
 	<ListView
-		android:id="@+id/list_results"
+		android:id="@+id/sb_list_results"
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
 		android:layout_alignParentLeft="true"
 		android:visibility="gone"
-		android:layout_below="@+id/searchArea" />
+		android:layout_below="@+id/sb_searchArea" />
 	<RelativeLayout
-		android:id="@+id/searchArea"
+		android:id="@+id/sb_searchArea"
 		android:background="#FFFFFF"
 		android:layout_marginTop="4dp"
 		android:padding="4dp"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content">
 		<TextView
-			android:id="@+id/placeholder"
+			android:id="@+id/sb_placeholder"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_alignBottom="@+id/root_list_button"
+			android:layout_alignBottom="@+id/sb_root_list_button"
 			android:layout_alignParentTop="true"
 			android:layout_centerVertical="true"
-			android:layout_toLeftOf="@+id/mic"
+			android:layout_toLeftOf="@+id/sb_mic"
 			android:layout_alignParentLeft="true"
 			android:layout_marginLeft="44dp"
 			android:singleLine="true"
@@ -34,13 +34,13 @@
 			android:textColor="#6F6F6F"
 			android:textAppearance="?android:attr/textAppearanceMedium" />
 		<EditText
-			android:id="@+id/search"
+			android:id="@+id/sb_search"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_alignParentTop="true"
 			android:layout_alignParentLeft="true"
 			android:layout_marginLeft="44dp"
-			android:layout_alignBottom="@+id/root_list_button"
+			android:layout_alignBottom="@+id/sb_root_list_button"
 			android:background="@null"
 			android:ems="10"
 			android:textColor="#212121"
@@ -49,43 +49,43 @@
 			<requestFocus />
 		</EditText>
 		<ImageView
-			android:id="@+id/mic"
+			android:id="@+id/sb_mic"
 			android:layout_width="25dp"
 			android:layout_height="25dp"
 			android:layout_alignParentTop="true"
-			android:layout_toLeftOf="@+id/overflow"
+			android:layout_toLeftOf="@+id/sb_overflow"
 			android:layout_alignWithParentIfMissing="true"
 			android:layout_marginRight="13dp"
-			android:layout_alignBottom="@+id/root_list_button"
+			android:layout_alignBottom="@+id/sb_root_list_button"
 			android:visibility="gone"
 			android:src="@drawable/ic_action_mic" />
 		<ImageView
-			android:id="@+id/clear"
+			android:id="@+id/sb_clear"
 			android:layout_width="25dp"
 			android:layout_height="25dp"
 			android:layout_alignParentTop="true"
-			android:layout_toLeftOf="@+id/mic"
+			android:layout_toLeftOf="@+id/sb_mic"
 			android:layout_alignWithParentIfMissing="true"
 			android:layout_marginRight="13dp"
-			android:layout_alignBottom="@+id/root_list_button"
+			android:layout_alignBottom="@+id/sb_root_list_button"
 			android:visibility="gone"
 			android:src="@drawable/ic_clear" />
 		<ImageView
-			android:id="@+id/overflow"
+			android:id="@+id/sb_overflow"
 			android:layout_width="25dp"
 			android:layout_height="25dp"
 			android:layout_alignParentRight="true"
 			android:layout_alignParentTop="true"
-			android:layout_alignBottom="@+id/root_list_button"
+			android:layout_alignBottom="@+id/sb_root_list_button"
 			android:visibility="gone"
 			android:src="@drawable/ic_more_vert_black_24dp"/>
 		<RelativeLayout
-			android:id="@+id/root_list_button"
+			android:id="@+id/sb_root_list_button"
 			android:layout_height="wrap_content"
 			android:layout_width="match_parent"
 			android:padding="8dp">
 			<ImageView
-				android:id="@+id/list_button"
+				android:id="@+id/sb_list_button"
 				android:layout_width="25dp"
 				android:layout_height="25dp"
 				android:src="@drawable/ic_more_vert_black_24dp"/>

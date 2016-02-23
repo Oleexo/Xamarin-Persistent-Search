@@ -95,11 +95,6 @@ namespace Orion.Xam.Android.SearchBox {
 			InitializeAttrs(context, attrs);
 			Initialize(context);
 		}
-
-		public SearchBoxView(Context context, IAttributeSet attrs, int defStyleAttr, int defStyleRes) : base(context, attrs, defStyleAttr, defStyleRes) {
-			InitializeAttrs(context, attrs);
-			Initialize(context);
-		}
 		#endregion
 
 		#region Inits
@@ -112,16 +107,16 @@ namespace Orion.Xam.Android.SearchBox {
 
 		private void Initialize(Context context) {
 			_context = context;
-			Inflate(context, Resource.Layout.SearchBox, this);
-			_root = FindViewById<RelativeLayout>(Resource.Id.root);
-			_listResults = FindViewById<ListView>(Resource.Id.list_results);
-			_searchArea = FindViewById<RelativeLayout>(Resource.Id.searchArea);
-			_search = FindViewById<EditText>(Resource.Id.search);
-			_mic = FindViewById<ImageView>(Resource.Id.mic);
-			_overflow = FindViewById<ImageView>(Resource.Id.overflow);
-			_listButton = FindViewById<ImageView>(Resource.Id.list_button);
-			_placeholder = FindViewById<TextView>(Resource.Id.placeholder);
-			_clear = FindViewById<ImageView>(Resource.Id.clear);
+			Inflate(context, Resource.Layout.search_box, this);
+			_root = FindViewById<RelativeLayout>(Resource.Id.sb_root);
+			_listResults = FindViewById<ListView>(Resource.Id.sb_list_results);
+			_searchArea = FindViewById<RelativeLayout>(Resource.Id.sb_searchArea);
+			_search = FindViewById<EditText>(Resource.Id.sb_search);
+			_mic = FindViewById<ImageView>(Resource.Id.sb_mic);
+			_overflow = FindViewById<ImageView>(Resource.Id.sb_overflow);
+			_listButton = FindViewById<ImageView>(Resource.Id.sb_list_button);
+			_placeholder = FindViewById<TextView>(Resource.Id.sb_placeholder);
+			_clear = FindViewById<ImageView>(Resource.Id.sb_clear);
 
 			_drawerArrowDrawable = new DrawerArrowDrawable(Resources);
 			_listButton.SetImageDrawable(_drawerArrowDrawable);
