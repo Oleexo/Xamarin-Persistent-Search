@@ -43,8 +43,10 @@ namespace Orion.Xam.Android.SearchBox {
 			}
 			TextView title = convertView.FindViewById<TextView>(Resource.Id.sb_title);
 			title.Text  = option.Title;
-			//ImageView icon = convertView.FindViewById<ImageView>(Resource.Id.icon);
-			//icon.SetImageDrawable(option.Icon);
+			if (option.Icon != null) {
+				ImageView icon = convertView.FindViewById<ImageView>(Resource.Id.sb_icon);
+				icon.SetImageDrawable(option.Icon);
+			}
 			//ImageView up = (ImageView) convertView.FindViewById<ImageView>(R.id.up);
 			//up.setOnClickListener(new OnClickListener() {
 

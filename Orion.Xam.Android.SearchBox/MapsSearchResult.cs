@@ -2,10 +2,10 @@
 
 namespace Orion.Xam.Android.SearchBox {
 	public class MapsSearchResult : SearchResult {
-		private readonly IAutocompletePrediction _element;
+		public IAutocompletePrediction Element { get; }
 
 		public MapsSearchResult(IAutocompletePrediction element) {
-			_element = element;
+			Element = element;
 			Type = SearchType.Maps;
 			Title = element.Description;
 		}

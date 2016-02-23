@@ -65,7 +65,9 @@
   <ItemGroup>
     <Compile Include="DrawerArrowDrawable.cs" />
     <Compile Include="Events\SearchBoxEventArgs.cs" />
+    <Compile Include="Events\SearchBoxItemFilteredEventArgs.cs" />
     <Compile Include="Events\SearchBoxItemSelectedEventArgs.cs" />
+    <Compile Include="Events\SearchBoxKeyBoardEventArgs.cs" />
     <Compile Include="MapsSearchResult.cs" />
     <Compile Include="ResourceIdManager.cs" />
     <Compile Include="SearchAdapter.cs" />

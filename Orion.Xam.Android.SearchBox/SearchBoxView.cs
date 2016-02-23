@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Android.Content;
 using Android.Gms.Common.Apis;
@@ -36,6 +38,7 @@ namespace Orion.Xam.Android.SearchBox {
 		private string _defaultPlacerHolder;
 		private Drawable _drawableRight;
 		private ImageView _clear;
+		private CancellationTokenSource _cancellationTokenSearch;
 
 		#region Properties
 		public string PlaceHolder { get; set; }
@@ -44,7 +47,7 @@ namespace Orion.Xam.Android.SearchBox {
 			get { return _itemsSource; }
 			set {
 				_itemsSource = value;
-				_filteredSources = value.ToList();
+				_filteredSources = value?.ToList() ?? new List<SearchResult>();
 			}
 		}
 
@@ -70,12 +73,21 @@ namespace Orion.Xam.Android.SearchBox {
 				ToggleDrawableRight();
 			}
 		}
+
+		public GoogleApiClient GoogleApiClient {
+			get { return _googleApiClient; }
+			set { _googleApiClient = value; }
+		}
+		public Func<string, Task<List<SearchResult>>> CustomSearchFunc { get; set; }
+
 		#endregion
 
 		#region Events
 
 		public event EventHandler<SearchBoxEventArgs> DrawableRightClick;
-		public event EventHandler<SearchBoxItemSelectedEventArgs> ItemSelected; 
+		public event EventHandler<SearchBoxItemSelectedEventArgs> ItemSelected;
+		public event EventHandler<SearchBoxItemFilteredEventArgs> ItemsFiltered;
+		public event EventHandler<SearchBoxKeyBoardEventArgs> KeyboardChanged;
 		#endregion
 
 		#region Constructors
@@ -107,6 +119,7 @@ namespace Orion.Xam.Android.SearchBox {
 
 		private void Initialize(Context context) {
 			_context = context;
+			_filteredSources = new List<SearchResult>();
 			Inflate(context, Resource.Layout.search_box, this);
 			_root = FindViewById<RelativeLayout>(Resource.Id.sb_root);
 			_listResults = FindViewById<ListView>(Resource.Id.sb_list_results);
@@ -212,7 +225,7 @@ namespace Orion.Xam.Android.SearchBox {
 			_isSearching = true;
 		}
 
-		private void CloseSearch() {
+		private void CloseSearch(bool afterSelection = false) {
 			if (!_isSearching)
 				return;
 			_placeholder.Visibility = ViewStates.Visible;
@@ -222,7 +235,7 @@ namespace Orion.Xam.Android.SearchBox {
 
 			_drawerArrowDrawable.setParameter(0);
 			_drawerArrowDrawable.setFlip(false);
-			DisableKeyboard();
+			DisableKeyboard(afterSelection);
 			_isSearching = false;
 		}
 
@@ -230,13 +243,18 @@ namespace Orion.Xam.Android.SearchBox {
 			_clear.Visibility = string.IsNullOrEmpty(text) ? ViewStates.Invisible : ViewStates.Visible;
 			_filteredSources = await SearchAsync(text);
 			_listResults.Adapter = _resultAdapter = new SearchAdapter(_context, _filteredSources, _search);
+			ItemsFiltered?.Invoke(this, new SearchBoxItemFilteredEventArgs(_filteredSources.ToList()));
 		}
 
 		private Task<List<SearchResult>> SearchAsync(string text) {
 			var tcs = new TaskCompletionSource<List<SearchResult>>();
 
+			_cancellationTokenSearch?.Cancel();
+			_cancellationTokenSearch = new CancellationTokenSource();
+			var token = _cancellationTokenSearch.Token;
 			Task.Run(async () => {
-				var results = ItemsSource.Where(s => s.IsMatch(text)).ToList();
+				var results = ItemsSource?.Where(s => s.IsMatch(text))?.ToList() ?? new List<SearchResult>();
+				token.ThrowIfCancellationRequested();
 				if (MapsResults && !string.IsNullOrWhiteSpace(text)) {
 					if (_googleApiClient == null) {
 						EnabledMaps();
@@ -246,8 +264,17 @@ namespace Orion.Xam.Android.SearchBox {
 						results.Add(new MapsSearchResult(element));
 					}
 				}
+				token.ThrowIfCancellationRequested();
+				if (CustomSearchFunc != null) {
+					var customSearchResults = await CustomSearchFunc.Invoke(text);
+					results.AddRange(customSearchResults);
+				}
+				token.ThrowIfCancellationRequested();
 				tcs.SetResult(results.OrderBy(o => o.Title).ToList());
-			});
+			}, token);
+			tcs.Task.ContinueWith((result) => {
+				_cancellationTokenSearch = null;
+			}, token);
 			return tcs.Task;
 		}
 
@@ -255,10 +282,12 @@ namespace Orion.Xam.Android.SearchBox {
 		private void EnableKeyboard() {
 			var inputMethodManager = _context.GetSystemService(Context.InputMethodService) as InputMethodManager;
 			inputMethodManager?.ToggleSoftInputFromWindow(ApplicationWindowToken, ShowSoftInputFlags.Explicit, 0);
+			KeyboardChanged?.Invoke(this, new SearchBoxKeyBoardEventArgs(false, SearchBoxKeyBoardEventArgs.KeyboardStatus.Opened));
 		}
-		private void DisableKeyboard() {
+		private void DisableKeyboard(bool afterSelection) {
 			var inputMethodManager = _context.GetSystemService(Context.InputMethodService) as InputMethodManager;
 			inputMethodManager?.HideSoftInputFromWindow(ApplicationWindowToken, 0);
+			KeyboardChanged?.Invoke(this, new SearchBoxKeyBoardEventArgs(afterSelection, SearchBoxKeyBoardEventArgs.KeyboardStatus.Closed));
 		}
 
 		#endregion
@@ -267,7 +296,7 @@ namespace Orion.Xam.Android.SearchBox {
 			_placeholder.Text = result.Title;
 			CurrentSelection = result;
 			ItemSelected?.Invoke(this, new SearchBoxItemSelectedEventArgs(result));
-			CloseSearch();
+			CloseSearch(true);
 			_listResults.InvalidateViews();
 		}
 
