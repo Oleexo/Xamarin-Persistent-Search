@@ -251,10 +251,12 @@ namespace Orion.Xam.Android.SearchBox {
 		}
 
 		private async void Search(string text) {
+			IsLoading = true;
 			_clear.Visibility = string.IsNullOrEmpty(text) ? ViewStates.Invisible : ViewStates.Visible;
 			_filteredSources = await SearchAsync(text);
 			_listResults.Adapter = _resultAdapter = new SearchAdapter(_context, _filteredSources, _search);
 			ItemsFiltered?.Invoke(this, new SearchBoxItemFilteredEventArgs(_filteredSources.ToList()));
+			IsLoading = false;
 		}
 
 		private Task<List<SearchResult>> SearchAsync(string text) {
