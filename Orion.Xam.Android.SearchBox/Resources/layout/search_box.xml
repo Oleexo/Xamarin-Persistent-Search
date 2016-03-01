@@ -25,7 +25,6 @@
 			android:layout_height="wrap_content"
 			android:layout_alignBottom="@+id/sb_root_list_button"
 			android:layout_alignParentTop="true"
-			android:layout_centerVertical="true"
 			android:layout_toLeftOf="@+id/sb_mic"
 			android:layout_alignParentLeft="true"
 			android:layout_marginLeft="44dp"
@@ -82,7 +81,7 @@
 		<RelativeLayout
 			android:id="@+id/sb_root_list_button"
 			android:layout_height="wrap_content"
-			android:layout_width="match_parent"
+			android:layout_width="wrap_content"
 			android:padding="8dp">
 			<ImageView
 				android:id="@+id/sb_list_button"
@@ -90,5 +89,13 @@
 				android:layout_height="25dp"
 				android:src="@drawable/ic_more_vert_black_24dp"/>
 		</RelativeLayout>
+		<ProgressBar 
+			android:id="@+id/sb_progressBar"
+			android:visibility="invisible"
+			style="@style/ProgressBarHorizontal"
+			android:layout_below="@+id/sb_root_list_button"
+			android:indeterminate="true"
+			android:layout_height="6dp"
+			android:layout_width="match_parent" />
 	</RelativeLayout>
 </RelativeLayout>

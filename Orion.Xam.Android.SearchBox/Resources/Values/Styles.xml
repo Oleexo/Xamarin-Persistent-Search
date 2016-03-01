@@ -1,0 +1,5 @@
+﻿<resources>
+	<style name="ProgressBarHorizontal" parent="Base.Widget.AppCompat.ProgressBar.Horizontal">
+		
+	</style>
+</resources>

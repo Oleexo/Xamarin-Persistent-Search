@@ -39,6 +39,8 @@ namespace Orion.Xam.Android.SearchBox {
 		private Drawable _drawableRight;
 		private ImageView _clear;
 		private CancellationTokenSource _cancellationTokenSearch;
+		private int _progressBarStyle;
+		private bool _isLoading;
 
 		#region Properties
 		public string PlaceHolder { get; set; }
@@ -80,6 +82,14 @@ namespace Orion.Xam.Android.SearchBox {
 		}
 		public Func<string, Task<List<SearchResult>>> CustomSearchFunc { get; set; }
 
+		public bool IsLoading {
+			get { return _isLoading; }
+			set {
+				_isLoading = value;
+				var progressBar = FindViewById<ProgressBar>(Resource.Id.sb_progressBar);
+				progressBar.Visibility = value ? ViewStates.Visible : ViewStates.Invisible;
+			}
+		}
 		#endregion
 
 		#region Events
